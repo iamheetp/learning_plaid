@@ -13,6 +13,7 @@ function App() {
       })
       .then((data) => {
         setBackendData(data);
+        console.log(data);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
