@@ -31,7 +31,7 @@ app.post("/create_link_token", async function (request, response) {
     products: ["auth"],
     language: "en",
     redirect_uri: "http://localhost:5173/",
-    country_codes: ["US"],
+    country_codes: ["US", "GB"],
   };
   try {
     const createTokenResponse = await plaidClient.linkTokenCreate(plaidRequest);
