@@ -73,5 +73,5 @@ app.post("/exchange_public_token", async function (request, response, next) {
 });
 
 app.listen(8000, () => {
-  console.log("server started on port 5000");
+  console.log("server started on port 8000");
 });
