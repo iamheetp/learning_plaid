@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "./App.css";
+
 import { usePlaidLink } from "react-plaid-link";
 
 axios.defaults.baseURL = "http://localhost:8000";
