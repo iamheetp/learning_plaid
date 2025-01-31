@@ -30,7 +30,7 @@ app.post("/create_link_token", async function (request, response) {
     client_name: "Plaid Test App",
     products: ["auth"],
     language: "en",
-    redirect_uri: "http://localhost:5173/",
+    redirect_uri: "https://fypconnect.netlify.app/",
     country_codes: ["US", "GB"],
   };
   try {
