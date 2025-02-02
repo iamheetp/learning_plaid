@@ -3,7 +3,8 @@ import axios from "axios";
 
 import { usePlaidLink } from "react-plaid-link";
 
-axios.defaults.baseURL = "http://localhost:8000";
+axios.defaults.baseURL = "https://fyp-setup.onrender.com/api/plaid";
+//https://fyp-setup.onrender.com/api/plaid
 
 function PlaidAuth({ publicToken }) {
   const [account, setAccount] = useState();
@@ -47,6 +48,7 @@ function App() {
     onSuccess: (public_token, metadata) => {
       setPublicToken(public_token);
       console.log("success", public_token, metadata);
+      // send public_token to server
     },
   });
 
