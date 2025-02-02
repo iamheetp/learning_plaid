@@ -3,7 +3,7 @@ import axios from "axios";
 
 import { usePlaidLink } from "react-plaid-link";
 
-axios.defaults.baseURL = "https://fyp-setup.onrender.com/api/plaid";
+axios.defaults.baseURL = "https://fyp-setup.onrender.com/";
 //https://fyp-setup.onrender.com/api/plaid
 
 function PlaidAuth({ publicToken }) {
